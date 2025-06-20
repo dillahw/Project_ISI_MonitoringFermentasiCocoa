@@ -6,8 +6,9 @@ Proyek ini bertujuan untuk membangun sistem monitoring suhu dan kelembaban yang 
 
 ---
 ## 🎓 Mata Kuliah
-- **[Interkoneksi Sistem Instrumentasi]** – Program Studi Teknik Instrumentasi
-- Dosen Pengampu: [Ahmad Radhy, S.Si., M.Si]
+- **[Interkoneksi Sistem Instrumentasi]** –
+  Program Studi Teknik Instrumentasi
+  Dosen Pengampu: [Ahmad Radhy, S.Si., M.Si]
 
   ---
   ## 👨‍💻 Anggota Kelompok
@@ -26,10 +27,10 @@ Proyek ini bertujuan untuk membangun sistem monitoring suhu dan kelembaban yang 
 
 ---
 ## ⚙️ Fitur Utama
-✅ Monitoring Suhu & Kelembaban Real-Time 
-✅ Penyimpanan Data Historis 
-✅ Visualisasi Data 
-✅ Blockchain-based Data Logging, untuk Menjamin keaslian & keamanan data
+-✅ Monitoring Suhu & Kelembaban Real-Time 
+-✅ Penyimpanan Data Historis 
+-✅ Visualisasi Data 
+-✅ Blockchain-based Data Logging, untuk Menjamin keaslian & keamanan data
 
   ## 🛠️ Implementasi dan Kode Program
 **- Rust Modbust Client**
@@ -102,6 +103,7 @@ async fn send_to_server(
 
 **-Rust TCP Server**
 #[tokio::main]
+
 async fn main() -> Result<(), Box<dyn Error>> {
     let sensor_id = "SHT20-PascaPanen-001";
     let location = "Gudang Fermentasi 1";
@@ -142,6 +144,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
 }
 
 **-Cargo.homl**
+
 cargo.homl Modbus_client
 [package]
 name = "sht20"
