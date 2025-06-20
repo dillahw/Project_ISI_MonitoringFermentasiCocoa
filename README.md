@@ -33,7 +33,8 @@ Proyek ini bertujuan untuk membangun sistem monitoring suhu dan kelembaban yang 
 -✅ Blockchain-based Data Logging, untuk Menjamin keaslian & keamanan data
 
   ## 🛠️ Implementasi dan Kode Program
-**- Rust Modbust Client**
+**-Rust Modbust Client**
+vuhih
 **-main.rs** 
 Modbus_client
 use chrono::{Local, SecondsFormat};  
