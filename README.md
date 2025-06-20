@@ -33,7 +33,8 @@ Proyek ini bertujuan untuk membangun sistem monitoring suhu dan kelembaban yang 
 
   ## 🛠️ Implementasi dan Kode Program
 **- Rust Modbust Client**
-main.rs Modbus_client
+**-main.rs** 
+Modbus_client
 use chrono::{Local, SecondsFormat};  
 use tokio_modbus::{client::rtu, prelude::*};
 use tokio_serial::SerialStream;
@@ -99,6 +100,7 @@ async fn send_to_server(
 }
 
 
+**-Rust TCP Server**
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {
     let sensor_id = "SHT20-PascaPanen-001";
@@ -139,7 +141,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
     }
 }
 
-(Tampilan Cargo.homl)
+**-Cargo.homl**
 cargo.homl Modbus_client
 [package]
 name = "sht20"
