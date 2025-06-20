@@ -20,6 +20,7 @@ Proyek ini bertujuan untuk membangun sistem monitoring suhu dan kelembaban yang 
 ---
 ## 📚 State Of The Art
 | Topik, Penulis, dan Tahun | Teknologi yang Digunakan | Hasil|
+|------|-----|-----|
 | Afoakwa, E. O. (2014) – Cocoa Production and Processing Technology|Pemantauan manual suhu dan kelembaban dalam kotak fermentasi tradisional, tanpa penyimpanan digital|Ditekankan pentingnya suhu dan kelembaban dalam menghasilkan kakao berkualitas tinggi, namun belum menggunakan teknologi monitoring otomatis|
 |Schwan & Wheals (2004) – The Microbiology of Cocoa Fermentation|Studi mikrobiologi fermentasi kakao, tanpa integrasi sensor digital|Menjelaskan hubungan langsung antara suhu/kelembaban dengan aktivitas mikroba fermentasi; menyarankan kontrol parameter lingkungan untuk hasil fermentasi yang optimal|
 
