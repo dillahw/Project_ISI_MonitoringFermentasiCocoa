@@ -33,6 +33,69 @@ Proyek ini bertujuan untuk membangun sistem monitoring suhu dan kelembaban yang 
  ✅ Blockchain-based Data Logging, untuk Menjamin keaslian & keamanan data
 
 ---
+## 🛠 Step by Step Eksekusi Sistem
+1. Jalankan Program Sensor
+ bash
+cd tcp_servers
+cargo build
+cargo run
+ Terminal baru
+ bash
+cd modbus_client
+cargo build
+cargo run
+
+Sensor akan mengirim data suhu dan kelembaban secara berkala ke server melalui TCP.
+
+2. Jalankan Ganache dan start_blockchain
+Terminal Baru
+cd sensor-blockchain
+ganache
+
+Terminal Baru
+./start_blockchain.sh
+lalu masukkan contract adress ke app.js 
+
+Akan muncul 10 address dan private key untuk digunakan di Metamask.
+
+3. Lalu klik Go live pada index.html maka akan muncul localhost 8545
+
+
+let wallet: LocalWallet = "0x...".parse::<LocalWallet>()?
+
+Lalu jalankan:
+ bash
+cargo run
+
+
+✅ Output di terminal:
+
+✅ Smart contract deployed at: 0xef9ec8f88f74cbac54b9e0065057de6c0b367570
+🚪 TCP Server listening on port 9000...
+📥 Received sensor data: ...
+✅ InfluxDB: data written
+📡 Ethereum: tx sent: ...
+
+
+4. Edit File Web Dashboard
+ bash
+cd Web31
+
+
+Buka file script.js dan ubah:
+ bash
+const contractAddress = "0xef9ec8f88f74cbac54b9e0065057de6c0b367570";
+
+
+5. Jalankan Web Server
+Akses browser ke: http://localhost:8545
+
+6. Simulasi Transaksi Web3
+- Buka Metamask, import private key dari Ganache
+- Klik Load Sensor Data
+- Masukkan nilai suhu dan kelembaban target
+- Klik Simulate Purchase
+- Sistem akan menampilkan QR code dan total ETH simulasi
 
 ## 📌 Saran untuk Pengembangan Selanjutnya
 - Integrasi Kecerdasan Buatan (AI) untuk Prediksi dan Optimasi Penetasan 
