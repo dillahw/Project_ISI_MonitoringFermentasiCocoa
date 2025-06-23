@@ -34,27 +34,6 @@ Proyek ini bertujuan untuk membangun sistem monitoring suhu dan kelembaban yang 
 
 ---
 
-## 📚 Pengujian 
-**- Hasil Pembacaan Suhu dan Kelembapan selama proses Inkubasi**
-**- Hasil penyimpanan di InfluxDB.**
-**- Visualisasi data Real-time dashboard di Grafana.**
-
-
----
-
-## 📚 Analisa Hasil Pengujian
- 
----
-
-## 🖼️ Dokumentasi dan Demo
-
-📹 Tonton video demo: 
-
-📷 Lihat dokumentasi foto di folder
-
-
----
-
 ## 📌 Saran untuk Pengembangan Selanjutnya
 - Integrasi Kecerdasan Buatan (AI) untuk Prediksi dan Optimasi Penetasan 
 - Fitur Prediksi Waktu Tetas Otomatis 
